@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+    }
+
+    h2 {
+      color: #4a148c;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 30px;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      text-align: left;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="tel"]:focus {
+      border-color: #4a148c;
+      outline: none;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    button,
+    input[type="reset"] {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button {
+      background-color: #4a148c;
+      color: #fff;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+    }
+
+    input[type="reset"] {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #ddd;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      form {
+        padding: 20px;
+      }
+
+      button,
+      input[type="reset"] {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Enter Your Name and Contact Number</h2>
+    <form action="index1.html" method="GET">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" maxlength="15"
+        pattern="^\+?[0-9\s\-]{10,15}$" placeholder="e.g. +1234567890" required />
+
+      <div class="button-group">
+        <button type="submit" h>Submit</button>
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
