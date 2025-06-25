@@ -26,7 +26,41 @@ const quizData = [
     question: "Q4: What type of language is React.js?",
     options: ["Database", "Backend", "Frontend"],
     correct: "Frontend"
-  }
+  },
+  {
+    question: "Q5: Which of the following is not a programming language?",
+    options: ["Python",
+      "Java",
+      "HTML",
+      "C++"],
+    correct: "HTML"
+  },
+  {
+    question: "Q6: What does 'OOP' stand for in programming?",
+    options: ["Object Oriented Programming",
+      "Operational Object Program",
+      "Optimal Output Processing",
+      "Object Operation Processor"],
+    correct: "Object Oriented Programming"
+  },
+  {
+    question: "Q7: Which of the following is a dynamically typed language?",
+    options: [" C++",
+      "Java",
+      "Python",
+      "C"],
+    correct: "Python"
+  },
+  {
+    question: "Q8:  In Python, what is the output of print(2 ** 3)?",
+    options: ["6","8","9","5"],
+    correct: "8"
+  },
+{
+  question:"Q9: What keyword is used to define a function in JavaScript?",
+  options: ["function","dec","func","method"],
+  correct: "function"
+}
 ];
 
 // ============================
